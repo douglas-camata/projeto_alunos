@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Configurações do mapa */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+
+.mapa {
+    max-width: 1120px;
+    width: 600px;
+    height: 400px;
+
+    /* Aplica papel de parede à nossa DIV */
+    background-image: url('../img/mapa-andradina.png');
+    /* height: 50%; */
+    /* width: 100%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px auto;
+    position: relative;
+}
+
+/* Textos */
+
+/* Para títulos*/
+/* "Pontos turísticos de Andradina"  */
+.textolocal {
+    font-family: DM Sans;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+/* para textos adicionais */
+.textoadicional {
+    font-family: Dancing Script;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.texto-bonito-corpo {
+    color: rgb(0, 0, 0);
+    margin-left: 100px;
+    font-family: "Raleway";
+    font-weight: 500;  
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.cabecalho2 {
+    color: rgb(0, 0, 0);
+    margin-left: 100px;
+    font-family: "Raleway";
+    font-weight: 300;  
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.linha-antes-texto {
+    margin-left: 100px;
+    width: 500px;
+    border: solid #000000 1px;
+    font-family: "Raleway";
+    margin-bottom: 50px;
+                        
+}
+
+.texto-direitos-bonito {
+    display: flex;
+    /* Colocar alguma configuração pra deixar esse texto na parte debaixo do card */
+    color: rgb(174, 132, 26);
+                                                
+}
+
+/* Cabeçalho */
+.cabecalho {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 100px;
+}
+
+/* Ícones/Lugares */
+
+.icone {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-color: rgb(59, 106, 201);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.icone1 {
+    top: 85px;
+    left: 490px;
+}
+.icone2 {
+    top: 150px;
+    left: 510px;
+}
+.icone3 {
+    top: 100px;
+    left: 250px;
+}
+.icone4 {
+    top: 120px;
+    left: 335px;
+}
+.icone5 {
+    top: 325px;
+    left: 479px;
+}
+.icone6 {
+    top: 200px;
+    left: 189px;
+}
+.icone7 {
+    top: 205px;
+    left: 292px;
+}
+.icone8 {
+    top: 245px;
+    left: 340px;
+}
+.icone9 {
+    top: 250px;
+    left: 285px;
+}
+.icone10 {
+    top: 225px;
+    left: 245px;
+}
+.icone11 {
+    top: 225px;
+    left: 285px;
+}
+.icone12 {
+    top: 325px;
+    left: 325px;
+}
+.icone13 {
+    top: 225px;
+    left: 330px;
+}
+.icone14 {
+    top: 210px;
+    left: 280px;
+}
+.icone15 {
+    top: 240px;
+    left: 360px;
+}
+.icone16 {
+    top: 240px;
+    left: 325px;
+}
+.icone17 {
+    top: 225px;
+    left: 350px;
+}
+.icone18 {
+    top: 250px;
+    left: 270px;
+}
+.icone19 {
+    top: 190px;
+    left: 280px;
+}
+.icone20 {
+    top: 180px;
+    left: 330px;
+}
+.icone21 {
+    top: 378px;
+    left: 220px;
+}
+.icone22 {
+    top: 170px;
+    left: 280px;
+}
+.icone23 {
+    top: 220px;
+    left: 310px;
+}
+.icone24 {
+    top: 260px;
+    left: 248px;
+}
+.icone25 {
+    top: 130px;
+    left: 250px;
+}
+/* Hover */
+
+.div-hover {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 200px;
+    height: 100px;
+    margin-left: 10px;
+    /* background-color: aqua; */
+}
+
+.icone:hover .div-hover{
+    display: block;
+    position: absolute;
+    top: 15%;
+    left: 37%;
+}
+
+/* Cards */
+
+.cabecalho-card {
+    background-color: rgb(59, 106, 201);
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card {
+    margin: 40px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 5px 0px 20px rgba(105, 105, 105, 0.8);
+    height: 15rem;
+    width: 15rem;
+}
+
+.rodape-card {
+    background-color: #54a1ff;
+    padding: 3px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Botão */
+
+
+
+.banner-inicio {
+    width: 100%;
+    height: 740px;
+      
+}
+
+header > nav > a {
+    text-decoration: none;
+}
+
+.hrefs {
+    font-family: Arial, Helvetica, sans-serif;
+    font: weight 300px;;
+    flex-direction: row;
+    color: #000000;
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 30px;
+}
+
+.botoes {
+    color:rgb(0, 0, 0);
+}
+
+.banner-imagens {
+    /* Definir largura máxima */
+    max-width: 50%;
+    /* Exibir as imagens em 4 colunas */
+    column-count: 4;
+    margin-left:5rem;
+    
+}
+
+.banner-imagens > figure > img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.banner-imagens > figure > img:hover {
+    transform: translateY(-5);
+    transform: scale(1.2);
+    box-shadow: 0 8px 12px #d8bd9a
+}
+
+.botao-clique-aqui {
+    background-color: #c3ab13;
+    border-radius: 8px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    margin-left:100px;
+    color:#000000;
+    font-family: "Raleway";
+    font-weight: 700;  
+}
+
+.div-banner2 {
+    display: flex;
+}
+
+.div3-banner2{
+    max-width: 50%;
+    margin-top: 80px;
+}
+
+.div > section > img {
+    width: 100%;
+
+}
+
+a {
+    text-decoration: none;
+    font-family: "Raleway";
+    color: #000000;
+}
+
+a:hover {
+    color: #0d0f94;
+}
+
+.container1-qmsomos {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.botao-voltar-qmsomos {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    margin-right: 50px;
+    margin-top: 50px;
+    
+}
+
+.img-logo-qmsomos {
+    width: 191px;
+    height: 157px;
+    display: flex;
+    margin-left: 20px;
+    
+}
+
+.titulo-qmsomos {
+    background-image: linear-gradient(to top, #F6C21C, #00013C);
+    display: flex;
+    background-clip: text;
+    color: #000000;
+    font-weight:400;
+    margin-left: 90px;
+    margin-top: 85px;
+    font-size: 50px;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent
+}
+
+.frase1 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Raleway";
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+.frase2 {
+    font-size: 25px;
+    font-weight: 200;
+    font-family: "Raleway";
+    margin-left: 90px;
+    margin-top: 10px;
+}
+
+.cabecalhos {
+    display: flex;
+    flex-direction: row; /* Muda para linha para alinhar horizontalmente */
+}
+
+.container-cabecalhos {
+    display: flex;
+    flex-direction: column; /* Mantenha as frases em coluna */
+}
+
+.box-azul {
+    background: #00013C;
+    width: 180px;
+    height: 500px;
+    margin-left: 20px; /* Adiciona um espaço entre os cabeçalhos e o box azul */
+    display: flex;
+    top: 0px;
+    left: 380px;
+    position: relative;
+}
+
+.img1 {
+    width: 270px;
+    height: 200px;
+    border-radius: 20px;
+    position: relative;
+    top: 40px;
+    left: 50px;
+}
+
+.img2 {
+    width: 270px;
+    height: 200px;
+    border-radius: 20px;
+    position: relative;
+    top: 60px;
+    left: 50px;
+}
+
+.img1:hover {
+    transform: translateY(-5);
+    transform: scale(1.1);
+}
+
+.img2:hover {
+    transform: translateY(-5);
+    transform: scale(1.1);
+}
+
+.frase-sbrns {
+    color:#c3ab13;
+    font-family: "Raleway";
+    display: flex;
+    
+    text-align: center;
+}
+
+.frase-sbrns2 {
+    font-family: "Raleway";
+    font-weight: 300;
+    display: flex;
+}
+
+
+.img-brilhinho {
+    width: 84px;
+    height: 91px;
+
+}
+
+.img-banner-aboutus {
+    width: 597px;
+    height: 374px;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 100px;
+    border-radius: 67px;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    justify-content: center;
+    margin: 50px;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.container {
+    display: flex;
+   
+}
+
+/* ------------------------------------- */
+
+.voltar-botao {
+    border-radius: 10px;
+    font-family: "Raleway";
+    
+    width: 50px;
+    height: 30px;
+    margin-right: 50px;
+    margin-top: 50px;
+    background-color: #00013C;
+    color: white;
+}
+
+/* -------------------------------------- */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    display: flex;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #00013C;
+    color: white;
+    transform: rotateY(180deg);
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+  }
+
+  /* Favoritos da Galera */
+.titulo-index {
+    font-family: "Allura";
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.texto-index {
+    font-family: "Raleway";
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.texto-fanglr {
+    font-family: "Raleway";
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+
+.subtexto-fanglr {
+    font-family: "Raleway";
+    font-weight: 300;
+    text-align: center;
+    margin-top: -25px;
+    margin-bottom: 50px;
+}
+
+.corfav{
+    color:rgb(174, 132, 26)
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 300px;
+}
+
+.titulo-footer{
+    font-family: "Raleway";
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+}
+  
+.footer-qmsomos {
+    background-color: #00013C;
+    margin-top: 150px;
+    height: 200px;
+    font-family: "Raleway";
+}
+
+footer > div > p {
+    text-align: center;
+    color: #ffffff;
+    font-size: "Raleway";
+}

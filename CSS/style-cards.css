@@ -1,0 +1,80 @@
+.container-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.card {
+    width: 330px;
+    height: 500px;
+    flex: 0 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #002596;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+.card:hover {
+    transform: translateY(-5);
+    box-shadow: 0 8px 12px #000dff
+}
+
+
+.subtitulo-card {
+    margin: 0;
+    font-size: 3rem;
+    color: #011140;
+    font-family: 'Great Vibes', cursive;
+}
+
+.imagem-card{
+    display: flex;
+}
+
+
+.conteudo-card {
+    padding: 10px;
+    background-color: #00368e;
+    text-align: center;
+}
+
+.color-text {
+    color: azure;
+}
+
+.rodape-card{
+    text-align: center;
+    padding: 8px;
+}
+
+.botao-card {
+    text-decoration: none;
+    color: #ddd;
+    background-color: #0d274f;
+    border-radius: 4px;
+    padding: 5px 6px;
+    display: inline-block;
+}
+
+.botao-card:hover{
+    background-color: rgb(71, 73, 189);
+}
+
+.card {
+    
+}
+
+.container-card {
+    gap: 15px;
+    display: flex;
+    margin-bottom: 15px;
+    
+    flex-direction: column;
+
+}
+
+.titulo-cards {
+    font-family: "Raleway";
+    display: flex;
+}
